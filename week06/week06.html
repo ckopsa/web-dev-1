@@ -1,9 +1,110 @@
 <!DOCTYPE html>
-<html>
-   <head>
-       <title>week06</title>
-   </head>
-   <body>
-      <p>This will be week 06</p>
-   </body>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CS 213 Week 06 Ponder and Prove</title>
+        <script type="text/javascript" src="week06.js"></script>
+        <style type="text/css">
+         form, pre {
+             margin-left: 20px;
+             font-family: Verdana, Geneva, sans-serif;
+             padding: 6px;
+             width: 550px;
+             font-size: 12px;
+             border: 1px solid rgb(0, 90, 136);
+             border-radius: 4px;
+         }
+
+         h2 {
+             border-bottom-style: solid;
+         }
+        </style>
+    </head>
+
+    <body>
+        <!-- First problem: Age -->
+        <h2>#1: Age</h2>
+        <p>Please indicate your age: 0-118 years</p>
+
+        <div>
+            <input size="3" onkeyup="validateAge(document.activeElement)"/>
+            <span style='color:red'>Invalid age</span>
+        </div>
+        <div>
+            <input size="3" onkeyup="validateAge(document.activeElement)"/>
+            <span style='color:red'>Invalid age</span>
+        </div>
+
+
+        <!-- Second problem: SSN -->
+        <h2>#2: SSN</h2>
+        <p>Please enter a Social Security Number: 000-00-0000</p>
+
+        <div>
+            <input size="11" onkeyup="validateSSN(document.activeElement)"/>
+            <span style='color:red'>Invalid SSN</span>
+        </div>
+        <div>
+            <input size="11" onkeyup="validateSSN(document.activeElement)"/>
+            <span style='color:red'>Invalid SSN</span>
+        </div>
+
+
+        <!-- Third problem: Credit Card Number -->
+        <h2>#3: Credit Card Number</h2>
+        <p>Please enter a credit card number: 0000 0000 0000 0000</p>
+
+        <div>
+            <input size="19" onkeyup="validateCCN(document.activeElement)"/>
+            <span style='color:red'>Invalid credit card number</span>
+        </div>
+        <div>
+            <input size="19" onkeyup="validateCCN(document.activeElement)"/>
+            <span style='color:red'>Invalid credit card number</span>
+        </div>
+
+
+        <!-- Fourth problem: Date -->
+        <h2>#4: Date</h2>
+        <p>Please enter a date: m/d/yyyy</p>
+
+        <div>
+            <input size="9" onkeyup="validateDate(document.activeElement)"/>
+            <span style='color:red'>Invalid date</span>
+        </div>
+        <div>
+            <input size="9" onkeyup="validateDate(document.activeElement)"/>
+            <span style='color:red'>Invalid date</span>
+        </div>
+
+
+        <!-- Fifth problem: Abbreviation -->
+        <h2>#5: State Abbreviation</h2>
+        <p>Please enter a 2-letter state abbreviation</p>
+
+        <div>
+            <input size="2" onkeyup="validateStateAbb(document.activeElement)"/>
+            <span style='color:red'>Invalid state abbreviation</span>
+        </div>
+        <div>
+            <input size="2" onkeyup="validateStateAbb(document.activeElement)"/>
+            <span style='color:red'>Invalid state abbreviation</span>
+        </div>
+
+
+        <!-- Sixth problem: Money  -->
+        <h2>#6: Dollar Amount</h2>
+        <p>Please enter an amount in US dollars</p>
+
+        <div>
+            <input size="10" onkeyup="validateDollar(document.activeElement)"/>
+            <span style='color:red'>Invalid money amount</span>
+        </div>
+        <div>
+            <input size="10" onkeyup="validateDollar(document.activeElement)"/>
+            <span style='color:red'>Invalid money amount</span>
+        </div>
+
+    </body>
 </html>
