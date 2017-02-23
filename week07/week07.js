@@ -52,5 +52,5 @@ function checkAllInputs(form) {
 function clearAllInputs(form) {
     var inputs = [].slice.call(form.getElementsByTagName('input'));
     var textInputs = inputs.filter(function(element) {if (element.getAttribute("type") == "text" && element.value == "") { return true; } return false;});
-    textInputs.forEach(function(element){element.value = ""});
+    textInputs.forEach(function(element){element.value = ""; validate(element, "", "")});
 }
