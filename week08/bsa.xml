@@ -1,0 +1,20 @@
+<xml version="1.0"?>
+  <!DOCTYPE bsa SYSTEM "bsa.dtd">
+  <bsa>
+    <council name="Rexburg">
+      <troop name="Bear" number="256">
+        <scout>
+          <first-name>Colton</first-name>
+          <last-name>Kopsa</last-name>
+          <address>
+            <street>3909 Neal Road</street>
+            <city>Paradise</city>
+            <state>CA</state>
+          </address>
+          <phone>530-492-1439</phone>
+          <rank date-earned="2/21/2017">Tenderfoot</rank>
+          <neritbadge date-earned="2/21/2017">Life Saving</neritbadge>
+        </scout>
+      </troop>
+    </council>
+  </bsa>
