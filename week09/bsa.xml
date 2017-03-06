@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <bsa>
+    <council name="Rexburg">
+      <troop name="Bear" number="256">
+        <scout>
+          <first-name>Colton</first-name>
+          <last-name>Kopsa</last-name>
+          <address>
+            <street>31 Nelly Road</street>
+            <city>Paradise</city>
+            <state>CA</state>
+          </address>
+          <phone>555-435-5439</phone>
+          <rank date-earned="2/21/2017">Tenderfoot</rank>
+          <meritbadge date-earned="2/21/2017">Life Saving</meritbadge>
+        </scout>
+        <scout>
+          <first-name>Carson</first-name>
+          <last-name>Kopsa</last-name>
+          <address>
+            <street>399 Knal Road</street>
+            <city>Paradise</city>
+            <state>CA</state>
+          </address>
+          <phone>555-552-1132</phone>
+          <rank date-earned="2/21/2017">Eagle</rank>
+          <meritbadge date-earned="2/21/2017">Physical Fitness</meritbadge>
+        </scout>
+      </troop>
+      <troop name="Falcon" number="512">
+        <scout>
+          <first-name>Kevin</first-name>
+          <last-name>Kopsa</last-name>
+          <address>
+            <street>309 Eel Road</street>
+            <city>Paradise</city>
+            <state>CA</state>
+          </address>
+          <phone>555-555-5533</phone>
+          <rank date-earned="2/21/2017">Tenderfoot</rank>
+          <meritbadge date-earned="2/21/2017">Life Saving</meritbadge>
+        </scout>
+        <scout>
+          <first-name>Davenport</first-name>
+          <last-name>Kopsa</last-name>
+          <address>
+            <street>912 Albert Ave</street>
+            <city>Paradise</city>
+            <state>CA</state>
+          </address>
+          <phone>555-422-1139</phone>
+          <rank date-earned="2/21/2017">Lightfoot</rank>
+          <meritbadge date-earned="2/21/2017">Water Saving</meritbadge>
+        </scout>
+        <scout>
+          <first-name>Kedrick</first-name>
+          <last-name>Kopsa</last-name>
+          <address>
+            <street>122 Waret Ave</street>
+            <city>Paradise</city>
+            <state>CA</state>
+          </address>
+          <phone>555-425-3139</phone>
+          <rank date-earned="2/21/2017">Eagle</rank>
+          <meritbadge date-earned="2/21/2017">Woodsman</meritbadge>
+        </scout>
+      </troop>
+    </council>
+  </bsa>
