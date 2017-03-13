@@ -1,8 +1,30 @@
 <!DOCTYPE html>
-   <head>
-       <title>week10</title>
-   </head>
-   <body>
-      <p>This will be week 10</p>
-   </body>
+<head>
+    <title>week10</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="week10.js"></script>
+</head>
+<body>
+    <div class="section">
+        <div class="input-bar">
+            <input name="canada" type="button" value="Canada" onclick="loadFile('state-data', 'canada.txt')"/>
+            <input name="mexico" type="button" value="Mexico" onclick="loadFile('state-data', 'mexico.txt')"/>
+            <input name="russiaa" type="button" value="Russia" onclick="loadFile('state-data', 'russia.txt')"/>
+            <input name="usa" type="button" value="USA" onclick="loadFile('state-data', 'usa.txt')"/>
+        </div>
+        <div id="state-data" class="data">
+            This text should change
+        </div>
+    </div>
+    <div class="section">
+        <div class="input-bar">
+            <input name="read" type="button" value="Read File"
+                   onclick="loadFile('json-data', '../' + document.getElementById('path').value)"/>
+            <input name="path" id="path" type="text" value="json.txt"/>
+        </div>
+        <div id="json-data" class="data">
+            This text should change
+        </div>
+    </div>
+</body>
 </html>

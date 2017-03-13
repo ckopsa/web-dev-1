@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+    background: black;
+}
+.data {
+    width: 66%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    background: white;
+}
+.input-bar {
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+}
+.section {
+    background: grey;
+    padding: 15px;
+    border: 1px solid white;
+    margin: 10px;
+}
