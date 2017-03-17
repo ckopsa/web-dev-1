@@ -1,5 +1,5 @@
 <?php
-    echo "<html>";
+echo "<html>";
 echo "<head>";
 echo "<title>Week 11 : Problem 1</title>";
 echo "</head>";
