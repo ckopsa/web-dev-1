@@ -27,7 +27,7 @@ echo "<title>Week 11 : Problem 4</title>";
 echo "</head>";
 echo "<body>";
 echo "<p>";
-if (!empty($numbers[$_POST["input4"]])) {
+if ($numbers[$_POST["input4"]]) {
     echo "The word \"" . $_POST["input4"] . "\" in Spanish is \"" . $numbers[$_POST["input4"]] . "\"";
 } else {
     echo "The English cardinal \"" . $_POST["input4"] . "\" is not between \"one\" and \"twenty\"";
