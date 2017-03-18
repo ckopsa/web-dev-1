@@ -6,6 +6,7 @@ echo "</head>";
 echo "<body>";
 echo "<p>test stuff.. :)</p>";
 echo "<table>";
+echo $_POST["input6"];
 $sortedStrings = sort(explode(", ", $_POST["input6"]), SORT_STRING);
 foreach ($sortedStrings as $string) {
     echo "<tr>";
