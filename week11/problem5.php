@@ -10,7 +10,7 @@ echo "<th>N</th>";
 echo "<th>X^n</th> ";
 echo "</tr>";
 $x = $_POST["x"];
-for ($n = 1; $n <= $_POST["n"]; $x++) {
+for ($n = 1; $n <= $_POST["n"]; $n++) {
     echo "<tr>";
     echo "<td>$n</td>";
     echo "<td>". pow($x, $n) . "</td>";
