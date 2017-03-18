@@ -9,12 +9,12 @@ echo "<tr>";
 echo "<th>N</th>";
 echo "<th>X^n</th> ";
 echo "</tr>";
-for ($x = 1; $x <= $_POST["n"]; $x++) {
+$x = $_POST["x"];
+for ($n = 1; $n <= $_POST["n"]; $x++) {
     echo "<tr>";
-    echo "<td>$x</td>";
-    echo "<td>0</td> ";
+    echo "<td>$n</td>";
+    echo "<td>". pow($x, $n) . "</td>";
     echo "</tr>";
-    echo "The number is: $x <br>";
 }
 echo "</table>";
 echo "</body>";
