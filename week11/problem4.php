@@ -27,7 +27,7 @@ echo "<title>Week 11 : Problem 4</title>";
 echo "</head>";
 echo "<body>";
 echo "<p>";
-echo "The word" . $_POST["input4"] . "\" in Spanish is \"";
+echo "The word \"" . $_POST["input4"] . "\" in Spanish is \"" . "\"";
 echo "</p>";
 echo "</body>";
 echo "</html>";
