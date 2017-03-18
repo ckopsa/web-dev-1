@@ -1,14 +1,19 @@
 <?php
 echo "<html>";
 echo "<head>";
-echo "<title>Week 11 : Problem 6</title>";
+echo "<title>Week 11 : Problem 5</title>";
 echo "</head>";
 echo "<body>";
 echo "<table>";
-$sortedStrings = sort(explode(", ", $_POST["input6"]), SORT_STRING);
-foreach ($sortedStrings as $string) {
+echo "<tr>";
+echo "<th>N</th>";
+echo "<th>X^n</th> ";
+echo "</tr>";
+$x = $_POST["x"];
+for ($n = 1; $n <= $_POST["n"]; $n++) {
     echo "<tr>";
-    echo $string;
+    echo "<td>$n</td>";
+    echo "<td>". pow($x, $n) . "</td>";
     echo "</tr>";
 }
 echo "</table>";
