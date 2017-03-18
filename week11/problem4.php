@@ -23,11 +23,11 @@ $numbers = array(
 );
 echo "<html>";
 echo "<head>";
-echo "<title>Week 11 : Problem 2</title>";
+echo "<title>Week 11 : Problem 4</title>";
 echo "</head>";
 echo "<body>";
 echo "<p>";
-echo "The word" . $_POST["input4"] . "\" in Spanish is \"". $numbers[$_POST("input4")] . "\"";
+echo "The word" . $_POST["input4"] . "\" in Spanish is \"";
 echo "</p>";
 echo "</body>";
 echo "</html>";
