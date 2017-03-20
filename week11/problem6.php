@@ -5,9 +5,10 @@ echo "<title>Week 11 : Problem 6</title>";
 echo "</head>";
 echo "<body>";
 echo "<p>test stuff.. :)</p>";
-$strings = explode(',', $_POST["input6"]);
+$sortedStrings = explode(',', $_POST["input6"]);
+sort($sortedStrings);
 echo "<table>";
-foreach (sort($strings) as $value) {
+foreach ($sortedStrings as $value) {
     echo "<tr>";
     echo "<td>$value</td>";
     echo "</tr>";
