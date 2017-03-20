@@ -4,7 +4,6 @@ echo "<head>";
 echo "<title>Week 11 : Problem 6</title>";
 echo "</head>";
 echo "<body>";
-echo "<p>test stuff.. :)</p>";
 $sortedStrings = explode(',', $_POST["input6"]);
 sort($sortedStrings);
 echo "<table>";
