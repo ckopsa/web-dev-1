@@ -13,7 +13,7 @@ $city = $_POST["city"];
 $state = $_POST["state"];
 $zipcode = $_POST["zipcode"];
 $phone = $_POST["phone"];
-$total_money = $doc->getElementById('total_money');
+echo $doc->getElementById('total_money')->nodeValue;
 echo "<html>";
 echo "<head>";
 echo "<title>Week 11 : Problem 5</title>";
