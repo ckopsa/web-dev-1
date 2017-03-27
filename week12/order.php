@@ -1,15 +1,15 @@
 <?php
-// $firstname = $_POST["firstname"];
-// $lastname = $_POST["lastname"];
-// $streetaddress = $_POST["streetaddress"];
-// $city = $_POST["city"];
-// $state = $_POST["state"];
-// $zipcode = $_POST["zipcode"];
-// $phone = $_POST["phone"];
+$firstname = $_POST["firstname"];
+$lastname = $_POST["lastname"];
+$streetaddress = $_POST["streetaddress"];
+$city = $_POST["city"];
+$state = $_POST["state"];
+$zipcode = $_POST["zipcode"];
+$phone = $_POST["phone"];
 echo "<html>";
 echo "<head>";
 echo "<title>Week 11 : Problem 5</title>";
-echo "<link href=\"style.css\" rel=\"style sheet\" type=\"text/css\">";
+echo "<link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\">";
 echo "</head>";
 echo "<body>";
 echo "<div class=\"nav-bar\">";
