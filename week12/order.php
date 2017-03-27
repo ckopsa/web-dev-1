@@ -1,10 +1,6 @@
 <?php
 $doc = new DomDocument;
-
-// We need to validate our document before refering to the id
-$doc->validateOnParse = true;
-$doc->LoadHTMLFile('week12.html');
-
+$doc->LoadHTMLFile("week12.html");
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
@@ -13,7 +9,7 @@ $city = $_POST["city"];
 $state = $_POST["state"];
 $zipcode = $_POST["zipcode"];
 $phone = $_POST["phone"];
-echo $doc->getElementById('total_money')->nodeValue;
+                echo $doc->saveHTML();
 echo "<html>";
 echo "<head>";
 echo "<title>Week 11 : Problem 5</title>";
