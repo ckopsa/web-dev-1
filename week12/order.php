@@ -3,7 +3,7 @@ $doc = new DomDocument;
 
 // We need to validate our document before refering to the id
 $doc->validateOnParse = true;
-$doc->LoadHTML('week12.html');
+$doc->LoadHTMLFile('week12.html');
 
 
 $firstname = $_POST["firstname"];
