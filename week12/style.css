@@ -25,12 +25,12 @@ body {
     margin: 0px;
     background-color: #7A5C54;
 }
+h1, h2, h3, p, input, td, th , a {
+    font-family: 'Pangolin', cursive;
+}
 h1 {
     margin: auto;
     width: 250px;
-}
-h1, h2, h3, p, input, td, th , a {
-    font-family: 'Pangolin', cursive;
 }
 input {
     font-size: 14px;
