@@ -2,6 +2,7 @@
 echo "<html>";
 echo "<head>";
 echo "<title>Week 11 : Problem 5</title>";
+echo "<link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\">";
 echo "</head>";
 echo "<body>";
 echo "<h1>Order Confirmation Page</h1>";
