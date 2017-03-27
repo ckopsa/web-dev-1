@@ -10,7 +10,7 @@ $city = $_POST["city"];
 $state = $_POST["state"];
 $zipcode = $_POST["zipcode"];
 $phone = $_POST["phone"];
-                echo $doc->saveHTML();
+echo $doc->getElementById("total_money");
 echo "<html>";
 echo "<head>";
 echo "<title>Week 11 : Problem 5</title>";
