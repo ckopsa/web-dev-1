@@ -6,7 +6,7 @@ echo "<link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\">";
 echo "</head>";
 echo "<body>";
 echo "<div class=\"nav-bar\">";
-echo "<a class=\"home-button\" class=\"nav-bar-button\" href=\"./week12.html\">Original Burger</a>";
+echo "<a class=\"home-button nav-bar-button\" href=\"./week12.html\">Original Burger</a>";
 echo "<a class=\"nav-bar-button\" href=\"./week12.html\">Place An Order</a>";
 echo "</div>";
 echo "<div class=\"main-container\"";
