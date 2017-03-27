@@ -1,6 +1,7 @@
 <?php
-$doc = new DomDocument;
-$doc->LoadHTMLFile("week12.html");
+$file = $DOCUMENT_ROOT. "week12.html";
+$doc = new DOMDocument();
+$doc->loadHTMLFile($file);
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
