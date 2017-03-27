@@ -1,4 +1,11 @@
 <?php
+$firstname = $_POST["firstname"];
+$lastname = $_POST["lastname"];
+$streetaddress = $_POST["streetaddress"];
+$city = $_POST["city"];
+$state = $_POST["state"];
+$zipcode = $_POST["zipcode"];
+$phone = $_POST["phone"];
 echo "<html>";
 echo "<head>";
 echo "<title>Week 11 : Problem 5</title>";
@@ -12,15 +19,8 @@ echo "</div>";
 echo "<div class=\"main-container\"";
 echo "<h1>Order Confirmation Page</h1>";
 echo "<h2>Customer Information</h2>";
-$firstname = $_POST["firstname"];
-$lastname = $_POST["lastname"];
-$streetaddress = $_POST["streetaddress"];
-$city = $_POST["city"];
-$state = $_POST["state"];
-$zipcode = $_POST["zipcode"];
-$phone = $_POST["phone"];
 echo "<p>Name: $firstname $lastname</p>";
-echo "<p>Address: $streetaddress, $city, $zipcode</p>";
+// echo "<p>Address: $streetaddress, $city, $zipcode</p>";
 echo "<p>Phone: $phone</p>";
 echo "</div>";
 echo "</body>";
