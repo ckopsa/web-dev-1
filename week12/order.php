@@ -1,16 +1,4 @@
 <?php
-function DOMinnerHTML(DOMNode $element)
-{
-    $innerHTML = "";
-    $children  = $element->childNodes;
-
-    foreach ($children as $child) 
-    {
-        $innerHTML .= $element->ownerDocument->saveHTML($child);
-    }
-
-    return $innerHTML;
-}
 $doc = new DomDocument;
 
 // We need to validate our document before refering to the id
@@ -26,7 +14,6 @@ $state = $_POST["state"];
 $zipcode = $_POST["zipcode"];
 $phone = $_POST["phone"];
 $total_money = $doc->getElementById('total_money');
-$total_money = DOMinnerHTML($total_money);
 echo "<html>";
 echo "<head>";
 echo "<title>Week 11 : Problem 5</title>";
