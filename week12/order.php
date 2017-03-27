@@ -20,7 +20,7 @@ $state = $_POST["state"];
 $zipcode = $_POST["zipcode"];
 $phone = $_POST["phone"];
 echo "<p>Name: $firstname $lastname</p>";
-echo "<p>Address: $streetaddress, $city, $state, $zipcode</p>";
+echo "<p>Address: $streetaddress, $city, $zipcode</p>";
 echo "<p>Phone: $phone</p>";
 echo "</div>";
 echo "</body>";
