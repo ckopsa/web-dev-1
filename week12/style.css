@@ -39,7 +39,7 @@ input {
     width: 130px;
     margin: auto;
 }
-#nav-bar {
+.nav-bar {
     background-color: #931009;
     width: 100%;
     height: 70px;
