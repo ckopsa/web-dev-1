@@ -11,7 +11,7 @@ echo "<h2>Customer Information</h2>";
 echo "<p>Name: Colton Kopsa</p>";
 echo "<p>Address: 3909 Neal Road, Paradise, CA, 95969</p>";
 echo "<p>Phone: 530 492 1439</p>";
-echo "</div>"
+echo "</div>";
 echo "</body>";
 echo "</html>";
 ?>
