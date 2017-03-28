@@ -10,7 +10,10 @@ $totalMoney = $_POST["totalMoney"];
 $shippingMoney = $_POST["shippingMoney"];
 $taxMoney = $_POST["taxMoney"];
 $finalMoney = $_POST["finalMoney"];
-$creditCardExpDate = $_POST["creditcardexpdate"];
+$creditCardExpDate = explode("/", $_POST["creditcardexpdate"]);
+$creditCardMonth = creditCardExpDate[0];
+$creditCardMonth = DateTime::createFromFormat('!m', $creditCardMonth)->format('F');
+$creditCardYear = creditCardExpDate[1];
 $cardType = $_POST["cardtype"];
 echo "<html>";
 echo "<head>";
@@ -44,7 +47,7 @@ if (isset($_POST["drink"])) {
 }
 echo "<p>Total: $ $finalMoney</p>";
 echo "<h2>Billing Information</h2>";
-echo "<p>Credit Card Expiration Date: $creditCardExpDate</p>";
+echo "<p>Credit Card Expiration Date: $creditCardMonth $creditCardYear</p>";
 echo "<p>Credit Card Type: $cardType</p>";
 echo "<div class=\"submission\">";
 echo "<form action=\"confirmation.php\" method=\"post\">";
