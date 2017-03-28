@@ -1,7 +1,7 @@
 <?php
 echo "<html>";
 echo "<head>";
-echo "<title>Week 11 : Problem 5</title>";
+echo "<title>Original Burger</title>";
 echo "<link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\">";
 echo "</head>";
 echo "<body>";
