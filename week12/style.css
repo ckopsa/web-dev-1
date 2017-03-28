@@ -29,8 +29,7 @@ h1, h2, h3, p, input, td, th , a {
     font-family: 'Pangolin', cursive;
 }
 h1 {
-    margin: auto;
-    width: 250px;
+    text-align: center;
 }
 input {
     font-size: 14px;
