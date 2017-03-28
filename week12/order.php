@@ -27,35 +27,45 @@ echo "<p>Name: $firstname $lastname</p>";
 echo "<p>Address: $streetaddress, $city, $state, $zipcode</p>";
 echo "<p>Phone: $phone</p>";
 echo "<h2>Order Information</h2>";
-echo "<p>Items' Total: $ $totalMoney</p>";
-echo "<p>Shipping: $ $shippingMoney</p>";
-echo "<p>Tax: $ $taxMoney</p>";
-echo "<p>Final Total: $ $finalMoney</p>";
+echo "<p>Items:</p>";
+if (isset($_POST["burger"])) {
+    echo "<p>Burger - $2.00</p>";
+}
+if (isset($_POST["cheeseburger"])) {
+    echo "<p>Cheeseburger - $2.50</p>";
+}
+if (isset($_POST["fries"])) {
+    echo "<p>Fries - $1.50</p>";
+}
+if (isset($_POST["drink"])) {
+    echo "<p>Drink - $1.00</p>";
+}
+echo "<p>Total: $ $finalMoney</p>";
 echo "</div>";
 echo "</body>";
 echo "</html>";
 ?>
 
 /*
-Title & Headings: The page should be well formatted and organized with an
-appropriate title and headings. The details of how you do this are up to you.
+  Title & Headings: The page should be well formatted and organized with an
+  appropriate title and headings. The details of how you do this are up to you.
 
-Name: The user's first and last name.
+  Name: The user's first and last name.
 
-Address: The user's address, presented in an easy-to-read way.
+  Address: The user's address, presented in an easy-to-read way.
 
-Phone: The user's phone number.
+  Phone: The user's phone number.
 
-Items: A list of the items selected for purchase and their respective costs.
+  Items: A list of the items selected for purchase and their respective costs.
 
-Total: The total cost of all the items being purchased.
+  Total: The total cost of all the items being purchased.
 
-Payment: The credit card type and expiration date. Display the expiration date
-with month and year, such as "January 2013."
+  Payment: The credit card type and expiration date. Display the expiration date
+  with month and year, such as "January 2013."
 
-Confirm & Cancel: At the bottom of the page, have a form element with an action
-element referencing the second PHP program (the Confirmation Page). There will
-be two submit buttons: one to confirm the purchase and one to cancel the
-purchase. Both of these will re-submit all the information presented on the
-Review Page.
+  Confirm & Cancel: At the bottom of the page, have a form element with an action
+  element referencing the second PHP program (the Confirmation Page). There will
+  be two submit buttons: one to confirm the purchase and one to cancel the
+  purchase. Both of these will re-submit all the information presented on the
+  Review Page.
 */
