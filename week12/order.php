@@ -24,7 +24,7 @@ echo "<p>Name: $firstname $lastname</p>";
 echo "<p>Address: $streetaddress, $city, $state, $zipcode</p>";
 echo "<p>Phone: $phone</p>";
 echo "<h2>Order Information</h2>";
-echo "<p>Items: $total_money</p>";
+echo "<p>Items: $totalMoney</p>";
 echo "</div>";
 echo "</body>";
 echo "</html>";
