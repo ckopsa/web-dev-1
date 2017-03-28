@@ -12,7 +12,7 @@ $taxMoney = $_POST["taxMoney"];
 $finalMoney = $_POST["finalMoney"];
 $creditCardExpDate = explode("/", $_POST["creditcardexpdate"]);
 $creditCardMonth = creditCardExpDate[0];
-$creditCardMonth = DateTime::createFromFormat('!m', $creditCardMonth)->format('F');
+$creditCardMonth = DateTime::createFromFormat('!m', (int)$creditCardMonth)->format('F');
 $creditCardYear = creditCardExpDate[1];
 $cardType = $_POST["cardtype"];
 echo "<html>";
