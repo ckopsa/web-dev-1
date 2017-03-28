@@ -10,7 +10,7 @@ $totalMoney = $_POST["totalMoney"];
 $shippingMoney = $_POST["shippingMoney"];
 $taxMoney = $_POST["taxMoney"];
 $finalMoney = $_POST["finalMoney"];
-$creditCardExpDate = $_POST["creditcardexpdate"];
+$creditCardExpDate = explode("/", $_POST["creditcardexpdate"]);
 $cardType = $_POST["cardtype"];
 echo "<html>";
 echo "<head>";
