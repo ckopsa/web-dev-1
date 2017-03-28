@@ -40,8 +40,13 @@ function togglePurchase(element) {
 
 function checkAndTogglePurchase(row) {
     var checkbox = row.getElementsByTagName("input")[0];
+    /*
+      Currently I cannot understand how to make both the row and the checkbox
+    activate the checkbox... so this is a future feature.
+
     checkbox.checked = !checkbox.checked;
     togglePurchase(checkbox);
+    */
 }
 
 function checkAllInputs(form) {
