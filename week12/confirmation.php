@@ -9,7 +9,7 @@ echo "<div class=\"nav-bar\">";
 echo "<a class=\"home-button nav-bar-button\" href=\"./week12.html\">Original Burger</a>";
 echo "<a class=\"nav-bar-button\" href=\"./week12.html\">Place An Order</a>";
 echo "</div>";
-echo "<div class=\"main-container\"";
+echo "<div class=\"main-container\">";
 if ($_POST["confirm"]) {
 echo "<h1>Purchase Complete!</h1>";
 echo "<h2>Thanks for eating at Original Burger!</h2>";
