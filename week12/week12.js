@@ -14,7 +14,7 @@ function validate(element, regex, errorMessage) {
 
 function togglePurchase(element) {
     var itemValue = element.parentElement.previousElementSibling.innerHTML;
-    var number = Number(itemValue.replace(/[^0-9\.]+/g,"")); 
+    var number = Number(itemValue.replace(/[^0-9\.]+/g,""));
     var tax = .08;
     var shippingCost = 5;
     if (!element.checked) {
@@ -23,6 +23,7 @@ function togglePurchase(element) {
     var totalAmount = Number(document.getElementById('total_money').innerHTML.replace(/[^0-9\.]+/g,"")) + number;
     // update total
     document.getElementById('total_money').innerHTML = totalAmount.toFixed(2);
+    document.getElementById('total_money').parentElement.children[1].setAttribute("value", totalAmount.toFixed(2));
     // update shipping
     var shippingAmount = shippingCost * Number(Boolean(totalAmount));
     document.getElementById('shipping_money').innerHTML = shippingAmount.toFixed(2);

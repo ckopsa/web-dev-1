@@ -1,8 +1,4 @@
 <?php
-$file = $DOCUMENT_ROOT. "week12.html";
-$doc = new DOMDocument();
-$doc->loadHTMLFile($file);
-
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
 $streetaddress = $_POST["streetaddress"];
@@ -10,7 +6,7 @@ $city = $_POST["city"];
 $state = $_POST["state"];
 $zipcode = $_POST["zipcode"];
 $phone = $_POST["phone"];
-echo $doc->getElementById("total_money")->nodeValue;
+$total_money = $_POST["total_money"];
 echo "<html>";
 echo "<head>";
 echo "<title>Week 11 : Problem 5</title>";

@@ -132,7 +132,7 @@
                             $2.00
                         </td>
                         <td>
-                            <input type="checkbox" onchange="togglePurchase(this)"/>
+                            <input name="burger" type="checkbox" onchange="togglePurchase(this)"/>
                         </td>
                     </tr>
                     <tr onclick="checkAndTogglePurchase(this)">
@@ -143,7 +143,7 @@
                             $2.50
                         </td>
                         <td>
-                            <input type="checkbox" onchange="togglePurchase(this)" />
+                            <input name="cheeseburger" type="checkbox" onchange="togglePurchase(this)" />
                         </td>
                     </tr>
                     <tr onclick="checkAndTogglePurchase(this)">
@@ -154,7 +154,7 @@
                             $1.50
                         </td>
                         <td>
-                            <input type="checkbox" onchange="togglePurchase(this)" />
+                            <input name="fries" type="checkbox" onchange="togglePurchase(this)" />
                         </td>
                         <tr onclick="checkAndTogglePurchase(this)">
                             <td>
@@ -164,7 +164,7 @@
                                 $1.00
                             </td>
                             <td>
-                                <input type="checkbox" onchange="togglePurchase(this)" />
+                                <input name="drink" type="checkbox" onchange="togglePurchase(this)" />
                             </td>
                         </tr>
                 </table>
@@ -175,6 +175,7 @@
                 <h3>Items</h3>
                 <p>
                     $ <span id="total_money">0.00</span>
+                    <input type="hidden" name="total_money" value="0.00"/>
                 </p>
                 <h3>Shipping</h3>
                 <p>
@@ -198,7 +199,7 @@
                                'Invalid Card Number')">
                 <span class="error" aria-live="polite"></span>
                 <br/>
-                <select>
+                <select name="cardtype">
                     <option value="VISA">Visa</option>
                     <option value="MASTERCARD">MasterCard</option>
                     <option value="AMEX">American Express</option>
