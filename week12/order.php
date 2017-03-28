@@ -47,34 +47,12 @@ echo "<h2>Billing Information</h2>";
 echo "<p>Credit Card Expiration Date: $creditCardExpDate</p>";
 echo "<p>Credit Card Type: $cardType</p>";
 echo "<div class=\"submission\">";
+echo "<form action=\"confirmation.php\">";
 echo "<input name=\"confirm\" type=\"submit\" value=\"Confirm\"/>";
 echo "<input name=\"cancel\" type=\"submit\" value=\"Cancel\"/>";
+echo "</form>";
 echo "</div>";
 echo "</div>";
 echo "</body>";
 echo "</html>";
 ?>
-
-/*
-  Title & Headings: The page should be well formatted and organized with an
-  appropriate title and headings. The details of how you do this are up to you.
-
-  Name: The user's first and last name.
-
-  Address: The user's address, presented in an easy-to-read way.
-
-  Phone: The user's phone number.
-
-  Items: A list of the items selected for purchase and their respective costs.
-
-  Total: The total cost of all the items being purchased.
-
-  Payment: The credit card type and expiration date. Display the expiration date
-  with month and year, such as "January 2013."
-
-  Confirm & Cancel: At the bottom of the page, have a form element with an action
-  element referencing the second PHP program (the Confirmation Page). There will
-  be two submit buttons: one to confirm the purchase and one to cancel the
-  purchase. Both of these will re-submit all the information presented on the
-  Review Page.
-*/
