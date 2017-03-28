@@ -27,12 +27,15 @@ function togglePurchase(element) {
     // update shipping
     var shippingAmount = shippingCost * Number(Boolean(totalAmount));
     document.getElementById('shipping_money').innerHTML = shippingAmount.toFixed(2);
+    document.getElementById('shipping_money').parentElement.children[1].setAttribute("value", shippingAmount.toFixed(2));
     // update tax
     var taxAmount = Number(document.getElementById('tax_money').innerHTML.replace(/[^0-9\.]+/g,"")) + number * tax;
     document.getElementById('tax_money').innerHTML = taxAmount.toFixed(2);
+    document.getElementById('tax_money').parentElement.children[1].setAttribute("value", taxAmount.toFixed(2));
     // update final
     var finalAmount = totalAmount + shippingAmount + taxAmount;
     document.getElementById('final_money').innerHTML = finalAmount.toFixed(2);
+    document.getElementById('final_money').parentElement.children[1].setAttribute("value", finalAmount.toFixed(2));
 }
 
 function checkAndTogglePurchase(row) {
