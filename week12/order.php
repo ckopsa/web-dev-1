@@ -11,6 +11,8 @@ $shippingMoney = $_POST["shippingMoney"];
 $taxMoney = $_POST["taxMoney"];
 $finalMoney = $_POST["finalMoney"];
 $creditCardExpDate = explode("/", $_POST["creditcardexpdate"]);
+$creditCardMonth = (int)$creditCardExpDate[0];
+$creditCardYear = $creditCardExpDate[1];
 $cardType = $_POST["cardtype"];
 echo "<html>";
 echo "<head>";
