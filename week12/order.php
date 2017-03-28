@@ -10,6 +10,8 @@ $totalMoney = $_POST["totalMoney"];
 $shippingMoney = $_POST["shippingMoney"];
 $taxMoney = $_POST["taxMoney"];
 $finalMoney = $_POST["finalMoney"];
+$creditCardExpDate = $_POST["creditcardexpdate"];
+$cardType = $_POST["cardtype"];
 echo "<html>";
 echo "<head>";
 echo "<title>Week 11 : Problem 5</title>";
@@ -41,6 +43,9 @@ if (isset($_POST["drink"])) {
     echo "<p>Drink - $1.00</p>";
 }
 echo "<p>Total: $ $finalMoney</p>";
+echo "<h2>Billing Information</h2>";
+echo "<p>Credit Card Expiration Date: $creditCardExpDate</p>";
+echo "<p>Credit Card Type: $cardType</p>";
 echo "</div>";
 echo "</body>";
 echo "</html>";
